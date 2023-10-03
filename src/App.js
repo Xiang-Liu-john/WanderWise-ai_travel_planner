@@ -567,7 +567,6 @@ const options = {
     "Museums",
     "Theme Parks",
     "Water Sports",
-    "Yoga and Wellness",
   ],
   cuisineTypes: [
     { name: "Traditional", emoji: "😋" },
@@ -595,6 +594,7 @@ const options = {
     { value: "pt", label: "Português", icon: "🇵🇹" },
     { value: "ru", label: "Русский", icon: "🇷🇺" },
     { value: "ja", label: "日本語", icon: "🇯🇵" },
+    { value: "zh", label: "中文", icon: "🇨🇳" },
   ],
 };
 
@@ -602,6 +602,7 @@ const topLocations = [
   { name: "Milano, Italy", value: "Milano/Italy" },
   { name: "Paris, France", value: "Paris/France" },
   { name: "Los Angeles, CA", value: "Los Angeles/California" },
+  { name: "Shanghai, China", value: "Shanghai/China" },
   // add more top locations as needed
 ];
 
@@ -620,7 +621,7 @@ const defaultValues = {
 
 const Main = ({ loading, response, handleSubmit, handleChange, email }) => (
   <MainContent>
-    <Title>⭐️ Travel Planner ⭐️</Title>
+    <Title>⭐️ WanderWise ⭐️</Title>
     {!response && <Subtitle>Fill the form to generate your itinerary</Subtitle>}
 
     <ResponseContainer>
